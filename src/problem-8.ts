@@ -11,4 +11,4 @@ function validateKeys<T extends object > (obj : T, keys: (keyof T)[]): boolean {
 }
 
 const persoN : Person = { name: "Alice", age: 25, email: "alice@example.com" };
-console.log(validateKeys(persoN, ["name", "address"]));
+console.log(validateKeys(persoN, ["name", "age"]));
